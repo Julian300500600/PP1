@@ -146,6 +146,7 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 4. Minimize the equations
 
   | Q0   | A=00 | A=01 | A=10 | A=11 |
+  |------|------|------|------|------|
   | B=00 |   0  |   1  |   1  |   0  |
   | B=01 |   0  |   1  |   1  |   0  |
   | B=10 |   0  |   1  |   1  |   0  | 
@@ -153,6 +154,7 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 
 
   | Q1 | A=00 | A=01 | A=10 | A=11 |
+  |-|-|-|-|-|
   | B=00 | 0  | 0  | 0  | 1  |
   |B=01 | 1  | 1  | 1  | 0  |
   | B=10 | 1  | 1  | 1  | 0  | 
@@ -161,6 +163,7 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 
 
    | Cout | A=00 | A=01 | A=10 | A=11 |
+   |-|-|-|-|-|
    | B=00   | 0  | 0  | 0  | 0  |
  | B=01   | 0  | 0  | 0  | 1  |
    | B=10   | 1  | 0  | 0  | 1  | 
