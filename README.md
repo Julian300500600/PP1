@@ -103,15 +103,15 @@ These functions map binary input sets (voltages) to binary outputs.
 Refer to the truth table of a 1-bit full adder:
 
 | C<sub>in</sub> | B | A | Sum (S) | C<sub>out</sub> |
-|--------------|---|---|---------|-----------------|
-| 0            | 0 | 0 | 0       | 0               |
-| 0            | 0 | 1 | 1       | 0               |
-| 0            | 1 | 0 | 1       | 0               |
-| 0            | 1 | 1 | 0       | 1               |
-| 1            | 0 | 0 | 1       | 0               |
-| 1            | 0 | 1 | 0       | 1               |
-| 1            | 1 | 0 | 0       | 1               |
-| 1            | 1 | 1 | 1       | 1               |
+|----------------|---|---|---------|-----------------|
+| 0              | 0 | 0 | 0       | 0               |
+| 0              | 0 | 1 | 1       | 0               |
+| 0              | 1 | 0 | 1       | 0               |
+| 0              | 1 | 1 | 0       | 1               |
+| 1              | 0 | 0 | 1       | 0               |
+| 1              | 0 | 1 | 0       | 1               |
+| 1              | 1 | 0 | 0       | 1               |
+| 1              | 1 | 1 | 1       | 1               |
 
 > Simulate this adder using NAND gates:
 [Full Adder NAND CircuitVerse Project](https://circuitverse.org/users/305021/projects/full-adder-nand-990621f6-993b-4676-a1b5-2a31aae451ce)
@@ -119,24 +119,24 @@ Refer to the truth table of a 1-bit full adder:
 #### Your Task
 Create a truth table for a **2-bit adder** without carry-in. What are the possible inputs and outputs?
 
-| A0 | B0 | B1 | A1 | Sum (S) | C<sub>out</sub> |
-|----|----|----|----|---------|-----------------|
-| 0  | 0  | 0  | 0  |         |                 |
-| 0  | 0  | 0  | 1  |         |                 |
-| 0  | 0  | 1  | 0  |         |                 |
-| 0  | 0  | 1  | 1  |         |                 |
-| 0  | 1  | 0  | 0  |         |                 |
-| 0  | 1  | 0  | 1  |         |                 |
-| 0  | 1  | 1  | 0  |         |                 |
-| 0  | 1  | 1  | 1  |         |                 |
-| 1  | 0  | 0  | 0  |         |                 |
-| 1  | 0  | 0  | 1  |         |                 |
-| 1  | 0  | 1  | 0  |         |                 |
-| 1  | 0  | 1  | 1  |         |                 |
-| 1  | 1  | 0  | 0  |         |                 |
-| 1  | 1  | 0  | 1  |         |                 |
-| 1  | 1  | 1  | 0  |         |                 |
-| 1  | 1  | 1  | 1  |         |                 |
+| B1 | A1 | B0 | A0 || Q0 | Q1 | C<sub>out</sub> |
+|----|----|----|----||----|----|-----------------|
+| 0  | 0  | 0  | 0  || 0  | 0  |     0           |
+| 0  | 0  | 0  | 1  || 1  | 0  |     0           |
+| 0  | 0  | 1  | 0  || 1  | 0  |     0           |
+| 0  | 0  | 1  | 1  || 0  | 1  |     0           |
+| 0  | 1  | 0  | 0  || 0  | 1  |     0           |
+| 0  | 1  | 0  | 1  || 1  | 1  |     0           |
+| 0  | 1  | 1  | 0  || 1  | 1  |     0           |
+| 0  | 1  | 1  | 1  || 0  | 0  |     1           |
+| 1  | 0  | 0  | 0  || 0  | 1  |     1           |
+| 1  | 0  | 0  | 1  || 1  | 1  |     0           |
+| 1  | 0  | 1  | 0  || 1  | 1  |     0           |
+| 1  | 0  | 1  | 1  || 0  | 0  |     1           |
+| 1  | 1  | 0  | 0  || 0  | 0  |     1           |
+| 1  | 1  | 0  | 1  || 1  | 0  |     1           |
+| 1  | 1  | 1  | 0  || 1  | 0  |     1           |
+| 1  | 1  | 1  | 1  || 0  | 1  |     1           |
 ### Task 3: Boolean Equations via Karnaugh Maps
 Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5aa370f36e) to derive Boolean equations for each output bit in your 2-bit adder.
 
@@ -148,7 +148,7 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 <details>
 <summary>The final functions</summary>
 
-Q<sub>0</sub> = .......
+Q<sub>0</sub> = Karnaugh Maps | A0 | B0  B1 | A1
 
 Q<sub>1</sub> = .......
 
