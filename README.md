@@ -119,7 +119,7 @@ Refer to the truth table of a 1-bit full adder:
 #### Your Task
 Create a truth table for a **2-bit adder** without carry-in. What are the possible inputs and outputs?
 
-| B1 | B0 | A1 | A0 | Q0 | Q1 | C<sub>out</sub> |
+| B1 | A1 | B0 | A0 | Q0 | Q1 | C<sub>out</sub> |
 |----|----|----|----|----|----|-----------------|
 | 0  | 0  | 0  | 0  | 0  | 0  |     0           |
 | 0  | 0  | 0  | 1  | 1  | 0  |     0           |
@@ -145,18 +145,18 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 3. Combine them using OR gates
 4. Minimize the equations
 
-  | Q0   | A=00 | A=01 | A=10 | A=11 |
+  | Q0   | A=00 | A=01 |A=10 | A=11 |
   |------|------|------|------|------|
-  | B=00 |   0  |   1  |   1  |   0  |
-  | B=01 |   0  |   1  |   1  |   0  |
-  | B=10 |   0  |   1  |   1  |   0  | 
-  | B=11 |   0  |   1  |   1  |   0  |
+  | B=00 |  0 |   1  |   1  |   0  |
+  | B=01 |   0  |   1  |   1  |  0  |
+  | B=10 |  0  |   1  |   1  |   0  | 
+  | B=11 |   0 |   1  |  1  |   0  |
 
 
   | Q1 | A=00 | A=01 | A=10 | A=11 |
   |-|-|-|-|-|
   | B=00 | 0  | 0  | 0  | 1  |
-  |B=01 | 1  | 1  | 1  | 0  |
+  |B=01 | 1  | 1 | 1  | 0  |
   | B=10 | 1  | 1  | 1  | 0  | 
   | B=11 | 0  | 0  | 0  | 1  |
 
@@ -164,10 +164,10 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 
    | Cout | A=00 | A=01 | A=10 | A=11 |
    |-|-|-|-|-|
-   | B=00   | 0  | 0  | 0  | 0  |
- | B=01   | 0  | 0  | 0  | 1  |
-   | B=10   | 1  | 0  | 0  | 1  | 
-   | B=11   | 1  | 1  | 1  | 1  |
+   | B=00   | 0  | 0 | 0  | 0  |
+ | B=01   | 0  | 0  | 0  | 1 |
+   | B=10  | 1  | 0  | 0 | 1  | 
+   | B=11  | 1  | 1  | 1  | 1  |
   
 <details>
 <summary>The final functions</summary>
@@ -186,7 +186,7 @@ Using your Boolean equations, build a logic network in [CircuitVerse](https://ci
 
 <details>
 <summary>Your solution</summary>
-A share link to your solution goes here: <a href=".................">Link!</a>
+A share link to your solution goes here: <a href="https://circuitverse.org/users/306371/projects/circuit-implementation-of-a-2-bit-adder">Link!</a>
 </details>
 
 ---
