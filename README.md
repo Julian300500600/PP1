@@ -145,14 +145,14 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 3. Combine them using OR gates
 4. Minimize the equations
 
-       |         A         |
+  |    |         A         |
   | Q0 | 00 | 01 | 10 | 11 |
   | 00 | 0  | 1  | 1  | 0  |
  B| 01 | 0  | 1  | 1  | 0  |
   | 10 | 0  | 1  | 1  | 0  | 
   | 11 | 0  | 1  | 1  | 0  |
 
-       |         A         |
+  |    |         A         |
   | Q1 | 00 | 01 | 10 | 11 |
   | 00 | 0  | 0  | 0  | 1  |
  B| 01 | 1  | 1  | 1  | 0  |
@@ -160,7 +160,7 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
   | 11 | 0  | 0  | 0  | 1  |
 
 
-          |         A         |
+   |      |         A         |
    | Cout | 00 | 01 | 10 | 11 |
    | 00   | 0  | 0  | 0  | 0  |
  B | 01   | 0  | 0  | 0  | 1  |
