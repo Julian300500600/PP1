@@ -198,4 +198,4 @@ A share link to your solution goes here: <a href="https://circuitverse.org/users
 
 **Remember:** Stop working after 90 minutes and record where you stopped!
 
-Ich habe 105 min gebraucht aufgrund bedienungsproblem.
+Ich habe 105 min gebraucht aufgrund von bedienungsproblem.
