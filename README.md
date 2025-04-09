@@ -87,11 +87,16 @@ Fill out the following table, mapping decimal numbers `0` through `15` to their 
 | 15      | 1111                   |
 
 **How many binary digits (bits) are needed?**
-
+Es werden 4 Bits benötigt um die ganzen Zahlen 0 bis 15 im Binärsystem darstellen zu können. 
 Explain how to calculate the number of bits required:
 <details>
+    
 <summary>Your Answer</summary>
-Erase this text and write your answer here!
+Dezimalzahlen werden mit der Restmethode in Binärzahlen umgerechnet. 
+Dabei wird die Dezimalzahl fortlaufend durch 2 geteilt und der Rest, 1 oder 0 notiert.
+Am Ende wenn mann als Ergebnis 0 bekommt steht eine Binärzahlenfolge von unten nach oben gelesen als Restwert.
+
+Binärzahlen werden in Dezimalzahlen umgerechnet, indem mit dem jeweiligen Exponenten, der Basis 2, der zugehörigen Stelle, in der Binärzahl, multipliziert wird.  
 </details>
 
 ---
