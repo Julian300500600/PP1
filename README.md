@@ -144,7 +144,12 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 2. Write down an equation for each cell marked `1`
 3. Combine them using OR gates
 4. Minimize the equations
-
+                 A
+   | Q1 | 00 | 01 | 10 | 11 |
+   | 00 |
+B  | 01 |
+   | 10 |
+   | 11 |
 <details>
 <summary>The final functions</summary>
 
