@@ -144,28 +144,37 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 2. Write down an equation for each cell marked `1`
 3. Combine them using OR gates
 4. Minimize the equations
-| Q0   |         A         |
-|      | 00 | 01 | 10 | 11 |
-| | 00 | 0  | 1  | 1  | 0  |
-|B| 01 | 0  | 1  | 1  | 0  |
-| | 10 | 0  | 1  | 1  | 0  | 
-| | 11 | 0  | 1  | 1  | 0  |
 
-| Q1   |         A         |
-|      | 00 | 01 | 10 | 11 |
-| | 00 | 0  | 1  | 1  | 0  |
-|B| 01 | 0  | 1  | 1  | 0  |
-| | 10 | 0  | 1  | 1  | 0  | 
-| | 11 | 0  | 1  | 1  | 0  |
+       |         A         |
+  | Q0 | 00 | 01 | 10 | 11 |
+  | 00 | 0  | 1  | 1  | 0  |
+ B| 01 | 0  | 1  | 1  | 0  |
+  | 10 | 0  | 1  | 1  | 0  | 
+  | 11 | 0  | 1  | 1  | 0  |
+
+       |         A         |
+  | Q1 | 00 | 01 | 10 | 11 |
+  | 00 | 0  | 0  | 0  | 1  |
+ B| 01 | 1  | 1  | 1  | 0  |
+  | 10 | 1  | 1  | 1  | 0  | 
+  | 11 | 0  | 0  | 0  | 1  |
+
+
+          |         A         |
+   | Cout | 00 | 01 | 10 | 11 |
+   | 00   | 0  | 0  | 0  | 0  |
+ B | 01   | 0  | 0  | 0  | 1  |
+   | 10   | 1  | 0  | 0  | 1  | 
+   | 11   | 1  | 1  | 1  | 1  |
+  
 <details>
 <summary>The final functions</summary>
 
-Q<sub>0</sub> = Karnaugh Maps | A0 | B0  B1 | A1
+Q<sub>0</sub> = (A=01 oder A=10)
 
-Q<sub>1</sub> = .......
+Q<sub>1</sub> = ((B=01 oder B=10) UND NICHT A=11) ODER (A=11 UND (B=00 ODER B=11))
 
-C<sub>out</sub> = .......
-
+C<sub>out</sub> = B=11 ODER (A=11 UND NICHT B=00)
 </details>
 
 ---
